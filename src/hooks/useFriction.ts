@@ -10,7 +10,7 @@ import {
 } from '../animation';
 import { getMaxDistanceFriction } from '../forces';
 
-type UseFrictionArgs = CSSPairs &
+export type UseFrictionArgs = CSSPairs &
   Omit<AnimationParams, 'onUpdate' | 'onComplete'> & {
     config?: Friction1DParams['config'];
   };
